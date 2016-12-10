@@ -16,10 +16,12 @@ describe('CountdownForm', () => {
     var countdownForm = TestUtils.renderIntoDocument(<CountdownForm onSetCountdown={spy}/>)
     var $el = $(ReactDOM.findDOMNode(countdownForm))
 
+    //i set seconds input as 109
     countdownForm.refs.seconds.value = '109'
     TestUtils.Simulate.submit($el.find('form')[0])
 
-    expect(spy).toHaveBeenCalledWith(109)
+    // let's check if it have been called with 109 or not?
+    expect(spy).toHaveBeenCalledWith(109) //that's why i pass 109
   })
 
   it('should not call onSetCountdown if invalid seconds entered', () => {
