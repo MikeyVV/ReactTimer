@@ -33,4 +33,8 @@
   .controls .button:first-child {
     margin-right: 1.5rem; }
 
+.page-title {
+  margin: 2rem 0;
+  text-align: center; }
+
 /*# sourceMappingURL=app.css.map */
