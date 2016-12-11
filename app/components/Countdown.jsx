@@ -21,7 +21,7 @@ var Countdown = React.createClass({
         case 'paused':
           clearInterval(this.timer)
           this.timer = undefined
-          break
+          break;
       }
     }
   },
