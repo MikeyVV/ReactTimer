@@ -1,7 +1,7 @@
 var React = require('react')
 
 var ControlsTimer = React.createClass ({
-  propsTypes: {
+  propTypes: {
     countStatus: React.PropTypes.string.isRequired,
     onStatusChange: React.PropTypes.func.isRequired
   },
